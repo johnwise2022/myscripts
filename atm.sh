@@ -2,7 +2,7 @@
 TL=35000
 DOLLAR=3500
 EURO=5000
-read -p "Enter Amount of Money You Want to Withraw: " Money
+read -p "Enter Amount of Money You Want to Withraw: " Amount
 read -p "Select an Currency :
 1 - TL
 2 - DOLLAR
@@ -12,14 +12,14 @@ case $operation in
   "1")
     symbol="₺"
     echo "Account= $(( $TL ))"  $symbol
-    if [[ $Money -gt $TL ]]
+    if [[ $Amount -gt $TL ]]
     then
         echo "Your Account Isn't Enough"
         echo "Have A Nice Day"
     date
     elif [[ $Money -le $TL ]]
     then
-        echo "Your New Account = "`expr $TL - $Money`  "$symbol"
+        echo "Your New Account = "`expr $TL - $Amount`  "$symbol"
         echo "Have A Nice Day"
     date
     fi
@@ -27,14 +27,14 @@ case $operation in
   "2")
     symbol="$"
     echo "Account= $(( $DOLLAR ))"  $symbol
-    if [[ $Money -gt $DOLLAR ]]
+    if [[ $Amount -gt $DOLLAR ]]
     then
         echo "Your Account Isn't Enough"
         echo "Have A Nice Day"
     date
     elif [[ $Money -le $DOLLAR ]]
     then
-        echo "Your New Account = "`expr $DOLLAR - $Money`  "$symbol"
+        echo "Your New Account = "`expr $DOLLAR - $Amount`  "$symbol"
         echo "Have A Nice Day"
     date
     fi
@@ -42,14 +42,14 @@ case $operation in
   "3")
     symbol="€"
     echo "Account= $(( $EURO ))"  $symbol
-    if [[ $Money -gt $EURO ]]
+    if [[ $Amount -gt $EURO ]]
     then
         echo "Your Account Isn't Enough"
         echo "Have A Nice Day"
     date
-    elif [[ $Money -le $EURO ]]
+    elif [[ $Amount -le $EURO ]]
     then
-        echo "Your New Account = "`expr $EURO - $Money`  "$symbol"
+        echo "Your New Account = "`expr $EURO - $Amount`  "$symbol"
         echo "Have A Nice Day"
     date
     fi
