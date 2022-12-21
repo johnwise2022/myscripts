@@ -19,7 +19,7 @@ case $operation in
     date
     elif [[ $Money -le $TL ]]
     then
-        echo "Your New Account = "`expr $TL - $Amount`  "$symbol"
+        echo "Your Account's New Status = "`expr $TL - $Amount`  "$symbol"
         echo "Have A Nice Day"
     date
     fi
@@ -34,7 +34,7 @@ case $operation in
     date
     elif [[ $Money -le $DOLLAR ]]
     then
-        echo "Your New Account = "`expr $DOLLAR - $Amount`  "$symbol"
+        echo "Your Account's New Status = "`expr $DOLLAR - $Amount`  "$symbol"
         echo "Have A Nice Day"
     date
     fi
@@ -49,7 +49,7 @@ case $operation in
     date
     elif [[ $Amount -le $EURO ]]
     then
-        echo "Your New Account = "`expr $EURO - $Amount`  "$symbol"
+        echo "Your Account's New Status = "`expr $EURO - $Amount`  "$symbol"
         echo "Have A Nice Day"
     date
     fi
