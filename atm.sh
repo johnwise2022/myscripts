@@ -3,7 +3,7 @@ TL=35000
 DOLLAR=3500
 EURO=5000
 read -p "Enter Amount of Money You Want to Withraw: " Amount
-read -p "Select an Currency :
+read -p "Select a Currency :
 1 - TL
 2 - DOLLAR
 3 - EURO
